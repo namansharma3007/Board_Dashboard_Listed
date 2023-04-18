@@ -1,0 +1,176 @@
+.dashboard-main-container {
+    padding: 40px;
+    display: flex;
+    column-gap: 3rem;
+    /* overflow: hidden; */
+    transition: var(--transition);
+}
+
+.dashboard-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.nav-top-bar>h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.input-search-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+}
+
+.search-button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    right: 5px;
+}
+
+.search-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.bell-notification {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.user-image {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.pie-graph-schedule {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.schedule-details-display {
+    display: flex;
+    background: var(--text-white);
+    height: max-content;
+    width: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.top-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-heading>h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.top-heading>a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--text-light-grey);
+}
+
+.schedule-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tab-schedule1,
+.tab-schedule2 {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0 8px 15px;
+}
+
+.tab-schedule1 {
+    border-left: 5px solid #9BDD7C;
+}
+
+.tab-schedule2 {
+    border-left: 5px solid #6972C3;
+}
+
+.schedule-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+}
+
+.timing-schedule {
+    color: #999999;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.address {
+    color: #999999;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    .dashboard-main-container{
+        margin-top: 40px;
+    }
+    .dashboard-container{
+        width: 100%;
+    }
+    .pie-graph-schedule{
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-top-bar {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+}

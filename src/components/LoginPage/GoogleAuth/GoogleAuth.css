@@ -1,0 +1,37 @@
+.google-auth-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 385px;
+}
+
+.button-g-auth, .apple-g-auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-light-grey);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.button-g-auth{
+    border: none;
+    background: var(--text-white);
+    height: 30px;
+    width: 180px;
+}
+
+.button-g-auth > img{
+    height: 14px;
+}
+
+.apple-icon{
+    font-size: 20px;
+}
+.apple-g-auth{
+    border: none;
+    background: var(--text-white);
+    height: 30px;
+    width: 180px;
+}

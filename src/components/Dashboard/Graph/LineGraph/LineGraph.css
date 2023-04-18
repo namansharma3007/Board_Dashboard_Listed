@@ -1,0 +1,67 @@
+.graph-container {
+    overflow: auto;
+    padding: 30px 10px;
+    background: var(--text-white);
+    border-radius: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.selection-month-index {
+    /* background-color: red; */
+    margin: 0 55px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.selection-month{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.selection-month > h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.selection-month>select {
+    border: none;
+    width: max-content;
+}
+
+.index-g-u {
+    display: flex;
+    gap: 3rem;
+}
+
+.dot-text {
+    display: flex;
+    font-family: 'Lato';
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot1{
+    background: #E9A0A0;
+}
+.dot2{
+    background: #9BDD7C;
+}

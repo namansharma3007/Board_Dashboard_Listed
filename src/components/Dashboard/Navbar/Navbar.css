@@ -1,0 +1,120 @@
+.nav-top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+}
+.nav-top-bar > h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.input-search-button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+}
+
+.search-button{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    right: 5px;
+}
+.search-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* background-color: red; */
+}
+
+.bell-notification{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.image-logout-button{
+    position: relative;
+}
+.button-logout-outer{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    background: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    z-index: 1;
+    /* border-radius: 20px; */
+    right: 1rem;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.button-logout-outer.displayset{
+    display: none;
+}
+
+.user-image{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-name::before{
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 2.5rem;
+    /* left: 0; */
+}
+
+.logout-button{
+    border: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+}
+.logout-button:hover{
+    font-weight: 700;
+    color: red;
+}
+
+.user-image{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-top-bar{
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+}

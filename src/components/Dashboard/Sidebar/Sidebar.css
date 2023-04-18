@@ -1,0 +1,162 @@
+.sidebar-container2 {
+    width: 340px;
+    height: 944px;
+    background: var(--primary-black);
+    border-radius: 30px;
+    color: var(--text-white);
+    display: flex;
+    padding: 60px 50px;
+    position: relative;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: var(--transition);
+    transform: translateX(0);
+}
+
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--text-white);
+}
+
+.icons-nav2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: red; */
+}
+
+.links-nav-bar {
+    color: var(--text-white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+
+.toogle-menu2{
+    display: none;
+}
+.links-nav-bar:hover {
+    font-weight: 700;
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+
+.footer-links {
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-links>a {
+    color: var(--text-white);
+}
+
+.toogle-menu {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.toogle-icon {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: -10px;
+    right: -55px;
+    display: none;
+    transition: var(--transition);
+}
+
+
+
+
+@media screen and (max-width:800px) {
+
+    .sidebar-container2{
+        all:unset;
+    }
+
+    .toogle-menu2{
+        display: block;
+    }
+    .footer-links {
+        display: none;
+    }
+
+    .sidebar-container2 {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        padding: 10px;
+        background: var(--primary-black);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 100%;
+    }
+    
+    .icons-nav2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background: transparent;
+        height: max-content;
+        overflow: hidden;
+    }
+
+    .links-nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-white);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .links-nav-bar:hover {
+        font-weight: 700;
+    }
+
+    .icons-nav2.activestate {
+        height: 0;
+    }
+
+    .toogle-menu2 {
+        font-size: 30px;
+        background: transparent;
+        border: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+    }
+    .toogle-menu2:hover{
+        scale: 1.1;
+    }
+    .toogle-icon2 {
+        color: var(--text-white);
+    }
+
+}
