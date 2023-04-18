@@ -5,7 +5,7 @@ import { IoLogoApple } from "react-icons/io";
 
 const GoogleAuth = () => {
   const googleAuth = () => {
-    window.open("http://localhost:8080/auth/google/callback", "_self");
+    window.open("https://google-auth-board-listed.cyclic.app/auth/google/callback", "_self");
   };
 
   return (
