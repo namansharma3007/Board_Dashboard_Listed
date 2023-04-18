@@ -10,7 +10,8 @@ function App() {
   // console.log(user)
   const getUser = async () => {
     try {
-      const url = "https://google-auth-board-listed.cyclic.app/auth/login/success";
+      // const url = "https://google-auth-board-listed.cyclic.app/auth/login/success";
+      const url = "https://google-auth-board-listed.netlify.app/auth/login/success";
 
       const response = await axios.get(url, { withCredentials: true });
       setUser(response.data.user._json)
