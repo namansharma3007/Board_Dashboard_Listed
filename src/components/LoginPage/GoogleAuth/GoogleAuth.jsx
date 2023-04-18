@@ -6,7 +6,8 @@ import { IoLogoApple } from "react-icons/io";
 const GoogleAuth = () => {
   const googleAuth = () => {
     // window.open("https://google-auth-board-listed.cyclic.app/auth/google/callback", "_self");
-    window.open("https://google-auth-board-listed.netlify.app/auth/google/callback", "_self");
+    // window.open("https://google-auth-board-listed.netlify.app/auth/google/callback", "_self");
+    window.open("https://google-auth-board-listed.up.railway.app/auth/google/callback", "_self");
   };
 
   return (
