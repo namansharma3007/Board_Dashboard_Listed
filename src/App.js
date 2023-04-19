@@ -16,6 +16,7 @@ function App() {
       // setUser(response.data.user._json)
       const response = await fetch(url, { credentials: "include" });
       const data = await response.json();
+      console.log(data)
       setUser(data.user._json);
     } catch (err) {
       console.error(err);
