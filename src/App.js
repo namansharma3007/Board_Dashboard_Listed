@@ -13,6 +13,7 @@ function App() {
       // const url = "http://localhost:8080/auth/login/success";
       
       const response = await axios.get(url, { withCredentials: true });
+      console.log(response)
       setUser(response.data.user._json)
     } catch (err) {
       console.error(err);
