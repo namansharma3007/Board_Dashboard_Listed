@@ -34,7 +34,7 @@ const Navbar = (userDetails) => {
         </div>
         <FaRegBell className="bell-notification" />
         <div className="image-logout-button">
-          <img src={user.picture} alt="Profile" className="user-image" onClick={showLogoutbutton}/>
+          <img src={`${user.picture}`} alt="Profile" className="user-image" onClick={showLogoutbutton}/>
           <div className={currClass}>
             <p className="user-name">{user.name}</p>
             <button onClick={logout} className="logout-button">Logout</button>

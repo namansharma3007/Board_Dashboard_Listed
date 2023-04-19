@@ -8,6 +8,7 @@
     flex-direction: column;
     gap: 1rem;
     position: relative;
+    width: 100%;
 }
 
 .selection-month-index {
