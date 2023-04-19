@@ -26,6 +26,7 @@
     flex-direction: column;
     gap: 2rem;
     /* background-color: red; */
+    transition: var(--transition);
 }
 
 .links-nav-bar {
@@ -87,6 +88,10 @@
         all:unset;
     }
 
+    .sidebar-container2{
+        transition: var(--transition);
+    }
+
     .toogle-menu2{
         display: block;
     }
@@ -140,6 +145,7 @@
 
     .icons-nav2.activestate {
         height: 0;
+        transition: var(--transition);
     }
 
     .toogle-menu2 {
