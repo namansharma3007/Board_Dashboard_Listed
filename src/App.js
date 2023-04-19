@@ -12,7 +12,8 @@ function App() {
       const url = "https://google-auth-board-listed.up.railway.app/auth/login/success";
       // const url = "http://localhost:8080/auth/login/success";
       
-      const response = await axios.get(url, { withCredentials: true });
+      // const response = await axios.get(url, { withCredentials: true });
+      const response = await axios.get(url);
       setUser(response.data.user._json)
     } catch (err) {
       console.error(err);
