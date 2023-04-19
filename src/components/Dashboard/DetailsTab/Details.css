@@ -59,17 +59,28 @@
     }
 
     .tab-data{
-        scale: 0.8;
+        width: 200px;
+        height: 100px;
+        gap: 0.5;
     }
 }
 
-/* @media screen and (max-width: 550px) {
-    .details-tab{
-        background-color: red;
-        gap: 0.2rem;
+@media screen and (max-width: 500px) {
+    .tab-data{
+        width: 180px;
+        height: 90px;
+        gap: 0.5;
     }
 
-    .tab-data{
-        scale: 0.5;
+    .icon-tab-data{
+        width: 100%;
+        font-size: 22px;
+        justify-content: end;
+        display: flex;
+        padding-right: 20px;
     }
-} */
+    .details-tab-data{
+        scale: 0.8;
+        padding: 0px 20px
+    }
+}
