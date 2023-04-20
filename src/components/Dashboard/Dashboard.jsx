@@ -12,10 +12,11 @@ const Dashboard = (userDetails) => {
     <section className="dashboard-main-container">
       <Sidebar />
       <div className="dashboard-container">
+
         {/* Top bar */}
         <Navbar user={user}/>
 
-        {/* Details bar: tabs, etc.. */}
+        {/* Details bar: tabs */}
 
         <Details />
 
@@ -23,6 +24,10 @@ const Dashboard = (userDetails) => {
         <LineGraph />
 
         <div className="pie-graph-schedule">
+
+          {/* Pie graph */}
+
+          
           <PieGraph />
 
           <aside className="schedule-details-display">

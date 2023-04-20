@@ -38,7 +38,6 @@ const LineGraph = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [containerRef]);
   
-  // console.log(containerWidth)
 
   return (
     <section className="graph-container" ref={containerRef}>

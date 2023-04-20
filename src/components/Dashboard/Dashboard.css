@@ -2,7 +2,6 @@
     padding: 40px;
     display: flex;
     column-gap: 3rem;
-    /* overflow: hidden; */
     transition: var(--transition);
 }
 
@@ -20,7 +19,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /* background-color: red; */
 }
 
 .nav-top-bar>h3 {
@@ -121,7 +119,6 @@
 
 .tab-schedule1,
 .tab-schedule2 {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     padding: 8px 0 8px 15px;

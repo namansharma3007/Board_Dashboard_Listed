@@ -2,8 +2,6 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* position: relative; */
 }
 
 .board-side {
@@ -25,7 +23,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
     flex-direction: column;
 }
 
@@ -37,21 +34,16 @@
     color: var(--text-white);
     width: 100%;
     text-align: center;
-    /* height: 60px; */
     padding: 20px;
     display: none;
 }
 
 .login-section {
     position: relative;
-    /* right: 15rem; */
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-direction: column;
     font-family: 'Lato', sans-serif !important;
     gap: 1rem;
-    /* background-color: red; */
 }
 
 .sigin-text > h2 {

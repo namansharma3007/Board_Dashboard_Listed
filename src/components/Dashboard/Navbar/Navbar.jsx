@@ -7,8 +7,7 @@ const Navbar = (userDetails) => {
   const [currClass, setcurrClass] = useState("button-logout-outer displayset")
   const user = userDetails.user.user;
   const logout = () => {
-    window.open("https://google-auth-board-listed.up.railway.app/auth/logout", "_self");
-    // window.open("http://localhost:8080/auth/logout", "_self");
+    window.open("http://localhost:8080/auth/logout", "_self");
   };
 
   const showLogoutbutton = ()=>{

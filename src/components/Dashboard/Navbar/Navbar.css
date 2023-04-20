@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /* background-color: red; */
 }
 .nav-top-bar > h3{
     font-weight: 700;
@@ -42,7 +41,6 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    /* background-color: red; */
 }
 
 .bell-notification{
@@ -61,8 +59,6 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    /* z-index: 1; */
-    /* border-radius: 20px; */
     right: 1rem;
     flex-direction: column;
     padding: 10px;
@@ -88,7 +84,6 @@
     background: black;
     position: absolute;
     top: 2.5rem;
-    /* left: 0; */
 }
 
 .logout-button{

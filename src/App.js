@@ -9,21 +9,16 @@ function App() {
   const [user, setUser] = useState(null)
   const getUser = async () => {
     try {
-      const url = "https://google-auth-board-listed.up.railway.app/auth/login/success";
-      // const url = "http://localhost:8080/auth/login/success";
+      const url = "http://localhost:8080/auth/login/success";
       
       const response = await axios.get(url, { withCredentials: true });
 
-
       if (response.data.error) {
-        // handle error response
         console.log(response.data.message);
       } else {
-        // handle success response
         setUser(response.data.user._json);
       }
 
-      // setUser(response.data.user._json)
     } catch (err) {
       console.error(err);
     }
@@ -32,7 +27,6 @@ function App() {
   useEffect(() => {
     getUser();
   }, [])
-  // console.log(user)
 
   return (
     <div className="App">
